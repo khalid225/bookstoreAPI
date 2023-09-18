@@ -38,7 +38,7 @@ namespace bookstore_communication_system.Controllers
 
        // POST api/bookController
         [HttpPost]
-        public void Post(int id, [FromBody] Book value)
+        public void Post( [FromBody] Book value)
         {
             if (string.IsNullOrEmpty(value?.Title))
             {
